@@ -18,7 +18,7 @@ class PrismaAuthRepository implements IUAuthRepository {
   }
 
   async create(user: User) {
-    const userCreate: Prisma.UserCreateInput = {
+    const userCreate = {
       fullname: user.fullname,
       username: user.username,
       password: user.password,
