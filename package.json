@@ -1,6 +1,6 @@
 {
   "name": "shopping-list-api",
-  "version": "0.0.1",
+  "version": "0.1.3",
   "description": "Uma API com autenticação de usuário, gerenciamento de listas e de produtos",
   "main": "main.ts",
   "author": "Ananias Caetano de Oliveira",
