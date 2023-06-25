@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Produção
+// datasource db {
+//   provider  =         "postgresql"
+//   url       =         env("DATABASE_URL")
+//   directUrl =         env("DIRECT_URL")
+//   shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+// }
+
+// localhost
+datasource db {
+  provider  =         "postgresql"
+  url       =         env("DATABASE_URL")
+}
+
+model User {
+  id              BigInt                @id @default(autoincrement())
+  fullname        String                @db.VarChar(100)
+  username        String      @unique   @db.VarChar(30)
+  password        String                @db.VarChar(255)
+
+  @@map("users")
+}
+
+model Product {
+  id              BigInt                @id @default(autoincrement())
+  title           String                @db.VarChar(100)
+  url_banner      String                @db.VarChar(255)
+  price           Decimal               @db.Money
+  created_at      DateTime              @default(now())
+  @@map("products")
+}

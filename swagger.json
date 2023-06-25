@@ -1,0 +1,21 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Shopping List API",
+    "description": "Uma API com autenticação de usuário, gerenciamento de listas e de produtos",
+    "contact": {
+      "email": "mail@ananiasc.dev"
+    },
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3284/v1",
+      "description": "Shopping List API"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {}
+  }
+}
