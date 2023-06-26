@@ -56,3 +56,7 @@ Rodar o servidor em desenvolvimento
 ```
 npm run dev
 ```
+
+## Documentação
+
+A documentação criada com Swagger pode ser acessada através da rota [localhost:3284/api-docs](http://localhost:3284/api-docs)
